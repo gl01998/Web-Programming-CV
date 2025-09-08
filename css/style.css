@@ -1,0 +1,187 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background-color: #fff5f3;
+}
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ba0c2f;
+  padding: 1rem 3rem;
+  border-bottom: 2px solid black;
+  font-size: 1.5rem;
+}
+
+nav p {
+  margin: 0;
+}
+
+nav a {
+  margin: 0;
+  align-self: center;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #22b9e8;
+  text-decoration: underline;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #ba0c2f;
+  padding: 1rem;
+  margin-top: auto;
+  border-top: 2px solid black;
+}
+
+footer a {
+  align-self: center;
+  margin-right: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #22b9e8;
+  text-decoration: underline;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: #bd817e;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  color: #fff5f3;
+}
+
+header img {
+  border: 3px solid white;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.address {
+  font-style: italic;
+  color: #fff5f3;
+  margin-top: 1rem;
+}
+
+.tagline {
+  font-weight: bold;
+  color: #fff5f3;
+  margin-top: 0.5rem;
+}
+
+/************* Sections ********************/
+hr {
+  border: 0;
+  height: 2px;
+  background: black;
+  margin: 0;
+}
+
+section {
+  padding: 0 4rem;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+section ul {
+  list-style-type: square;
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+section a {
+  color: #22b9e8;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #22b9e8;
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px 50px;
+  box-shadow: 0 5px 10px #00000080;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  display: block;
+}
+
+.card h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #ba0c2f;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+form {
+  min-width: 40%;
+  margin: 50px 0;
+}
+
+button,
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
