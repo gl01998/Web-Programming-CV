@@ -72,7 +72,7 @@ header h1 {
 header img {
   border: 3px solid white;
   border-radius: 10px;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .address {
@@ -135,6 +135,11 @@ section a:hover {
   border-radius: 10px;
   padding: 20px 50px;
   box-shadow: 0 5px 10px #00000080;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card img {
