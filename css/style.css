@@ -13,24 +13,25 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: #ba0c2f;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   border-bottom: 2px solid black;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 nav p {
   margin: 0;
+  color: white;
 }
 
 nav a {
   margin: 0;
   align-self: center;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #22b9e8;
+  color: white;
   text-decoration: underline;
 }
 
@@ -39,7 +40,7 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #ba0c2f;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-top: auto;
   border-top: 2px solid black;
 }
@@ -52,7 +53,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #22b9e8;
+  color: black;
   text-decoration: underline;
 }
 
@@ -88,15 +89,20 @@ header img {
 }
 
 /************* Sections ********************/
-hr {
+body hr {
   border: 0;
   height: 2px;
   background: black;
-  margin: 0;
+  margin: 0 0 50px 0;
 }
 
 section {
   padding: 0 4rem;
+}
+
+section h2 {
+  padding-left: 10px;
+  border-left: 4px solid #ba0c2f;
 }
 
 section dl {
